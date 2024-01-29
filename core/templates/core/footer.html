@@ -1,0 +1,46 @@
+{% load static %}
+<br>
+<style>
+     footer {
+        background-color: rgba(0, 0, 0, 0.8); /* rgba(0, 0, 0, 0.8) represents black with 80% opacity */
+    }
+</style>
+<div class="container">
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-md-3">
+                    <img src= "{%  static 'images/logo_sc.jpg' %}" alt="Logo"  width="80" height="80"  class="rounded-circle shadow-4-strong border">
+                </div>
+                
+                <!-- WHO WE ARE -->
+                <div class="col-md-3">
+                    <h5>WHO WE ARE</h5>
+                    <p>About Us</p>
+                    <p>Our Team</p>
+                    <!-- Add more WHO WE ARE links as needed -->
+                </div>
+                
+                <!-- VIDEO GALLERY -->
+                <div class="col-md-3">
+                    <h5>VIDEO GALLERY</h5>
+                    <p>Featured Videos</p>
+                    <p>Latest Uploads</p>
+                    <!-- Add more VIDEO GALLERY links as needed -->
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 123-456-7890</p>
+                    <p>Address: Your Address</p>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+</div>

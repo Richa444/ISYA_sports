@@ -1,0 +1,73 @@
+{% load static %}
+{% include 'core/header.html' %} 
+
+        <style>
+            .text-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                text-align: center;
+            }
+
+            .text-overlay h2 {
+                font-size: 2rem;
+            }
+            .imagevolunteer{
+               opacity: 0.9; 
+            }
+            .backend{
+                color: purple;
+            }
+            .contact{
+                 text-align:center
+            }
+        </style>
+    <br>
+        <div class = "container">
+            
+            <div class="imagevolunteer">
+                <div class="position-relative"> 
+                        <img src="{%  static 'engagewithus/images/volunteer.jpg' %}" width="100%" height="500px" alt="I am volunteer">
+                    
+                    
+                    <div class="text-overlay">
+                        <h2 class="text-center text-black"><i>“Volunteers do not necessarily have the time,
+                             they just have the heart.”</i></h2>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container p-7 sec2">
+                <h2 class="text-center"> Volunteering</h2>
+                <h6 class="text-center">Volunteer placement at IYSA is as old as IYSA itself! IYSA facilitates volunteering 
+                    from multiple countries across its various projects. Volunteers can offer their time, talent, resources, and 
+                    skills in different domains, including the centres for the Young at Risk and in IYSA itself.</h6>       
+            </div>
+            
+                 
+        </div>
+        <br>
+  
+   
+
+        <br><br>
+        <div class = "container contact col-sm-5">
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                    <table>
+                        {{form.as_table}}   
+                    </table>
+                <input type="submit" class="btn btn-success" value="Submit">
+            </form>
+                
+                
+        </div>
+  
+{% include 'core/footer.html' %}    
+    
+
+
+  

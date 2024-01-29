@@ -1,0 +1,31 @@
+{% load static %}
+{% include 'core/header.html' %} 
+<div class="col-sm-8">
+    <h4 class="text-center alert alert-info"> Show volunteer Information</h4>
+    {% if volunteer %}
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">first_name</th>
+                  <th scope="col">last_name</th>
+                  <th scope="col">email</th>
+                  <th scope="col">phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for vol in volunteer %}
+                <tr>
+                  <th scope="row">{{vol.id}}</th>
+                  <td>{{vol.first_name}}</td>
+                  <td>{{vol.last_name}}</td>
+                  <td>{{vol.email}}</td>
+                  <td>{{vol.phone}}</td>       
+                </tr> 
+                {% endfor %}                   
+              </tbody>
+          </table>
+    {% else %}
+          <h4 class="text-center alert alert-warning">No Records</h4>
+    {% endif %}
+</div>

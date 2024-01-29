@@ -1,0 +1,42 @@
+{% load static %}
+<style>   
+.contentjustify{
+    text-align: justify; text-align-last: center;
+}
+.trace{
+    text-align:center 
+   
+}
+.red{
+color:rgb(180, 10, 10)
+}
+.whiteblack {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+</style>
+<div class="container mt-5">
+
+    <div class="row">
+
+        <div class="col-sm-6 whiteblack">
+            <img src="{%  static 'home/images/about.png' %}" class="whiteblack"
+              alt="Wild Landscape">
+        </div>
+        <div class="col-sm-6">
+            <h1 class="red trace">Who we are</h1>
+            <small class="trace "><pre>----action speaks larger----</pre></small>
+            <p class="contentjustify" >The India Young Sporting Alliance has a clear vision of inclusiveness for children and youth who are on the margins of society—-those children on the street, out of school, labourers, orphans or single-parent children, children who are in the Government school —using sports as a platform of opportunity.
+            We create sporting opportunities for impoverished and deprived children and youth, to support them in changing unhealthy habits and lifestyles and to focus on healthy alternatives and a bright future. Through sports coaches and counsellors, we encourage the holistic growth of these children through talent development, thereby breaking the vicious cycles of deprivation, low skills, low income and poor life choices for themselves and their families.
+            India Young Sporting Alliance also mobilises the public through awareness to become part of the caring community it envisages, to draw vulnerable children back into the mainstream.</p>
+
+            <div class="container">
+                
+                <button type="button" class="btn btn-info">KNOW MORE</button>
+                <button type="button" class="btn btn-info">ANNUAL REPORTS</button>
+                <button type="button" class="btn btn-info">NEWSLETTER</button>                 
+              </div>
+        </div>
+    </div>
+</div>
+

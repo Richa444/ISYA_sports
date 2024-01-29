@@ -1,0 +1,31 @@
+{% load static %}
+{% include 'core/header.html' %} 
+<div class="col-sm-8">
+    <h4 class="text-center alert alert-info"> Show Contact Information</h4>
+    {% if contact %}
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">first_name</th>
+                  <th scope="col">last_name</th>
+                  <th scope="col">email</th>
+                  <th scope="col">phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for con in contact %}
+                <tr>
+                  <th scope="row">{{con.id}}</th>
+                  <td>{{con.first_name}}</td>
+                  <td>{{con.last_name}}</td>
+                  <td>{{con.email}}</td>
+                  <td>{{con.phone}}</td>       
+                </tr> 
+                {% endfor %}                   
+              </tbody>
+          </table>
+    {% else %}
+          <h4 class="text-center alert alert-warning">No Records</h4>
+    {% endif %}
+</div>
