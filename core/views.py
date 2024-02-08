@@ -51,3 +51,7 @@ def donate(request):
     }
     # Handle the donation logic here
     return render(request, 'core/donate.html', context)
+
+
+def share(request):
+    return render(request,'core/share.html')

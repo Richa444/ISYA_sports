@@ -7,7 +7,16 @@
 .red{
 color:rgb(180, 10, 10)
 }
+
+.card-text{
+    text-align: justify;
+}
+
 </style>
+<style>
+    #more {display: none;}
+</style>
+
 <br><br>
 
 <div class="container">
@@ -16,47 +25,92 @@ color:rgb(180, 10, 10)
     <div class="row">
         <div class="col-3">
             <div class="card">
-             <img src="{%  static 'home/images/event5U.jpg' %}" class="card-img-top" alt="Wild Landscape">
+             <img src="{%  static 'home/images/12edit.jpg' %}" class="card-img-top" alt="Wild Landscape">
              <div class="card-body">
-                <h5 class="card-body">abc</h5>
-                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                <h5 class="card-body">Football League on November 14, 2022</h5>
+                <p class="card-text ">The Karnataka State Football Association and the Bangalore District
+                     Football Association (BDFA) organised a C Division Football<span id="dots">...</span>
+                     <span id="more"> League on November 14, 2022 at 
+                     the KSFA grounds in Ashok Nagar in which we competed against 
+                     6 teams, won 5 matches and drew against one team.</span></p>
+                     <button onclick="myFunction()" id="myBtn" class="btn btn-info" >Read more</button>
              </div>
             </div>
         </div>
         <div class="col-3">
             <div class="card">
-             <img src="{%  static 'home/images/event5U.jpg' %}" class="card-img-top" alt="Wild Landscape">
+             <img src="{%  static 'home/images/51edit.jpg' %}" class="card-img-top" alt="Wild Landscape">
              <div class="card-body">
-                <h5 class="card-body">abc</h5>
-                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                <h5 class="card-body">Youth Sports Day on January 25, 2023. </h5>
+                <p class="card-text "> "IYSA (India Young Sporting Alliance) hosted the Youth Sports Day at 
+                    Sumanahalli on January 25, 2023 Director of IYSA,<span id="dots">...</span><span id="more">  Murugaraj, emphasized the importance of 
+                    physical activities for a healthy mind. Mr. Kamal, BUFC Super Division Football Coach, 
+                    Bengaluru, encouraged participation over winning, pledging ongoing support to IYSA. 
+                    The event featured diverse sports activities tailored for sub-juniors, juniors, and seniors,
+                     with medals and certificates awarded to winners by the directors and staff. Mr. Harsha,
+                      physical teacher at IYSA Bengaluru, extended gratitude, as over 70
+                     children from IYSA's centers and intervention areas actively participated."</span></p>
+                     <button onclick="myFunction()" id="myBtn" class="btn btn-info" >Read more</button>
              </div>
             </div>
         </div>
 
         <div class="col-3">
             <div class="card">
-                <img src="{%  static 'home/images/event1U.jpg' %}" class="card-img-top" alt="Wild Landscape">
+                <img src="{%  static 'home/images/14edit.jpg' %}" class="card-img-top" alt="Wild Landscape">
                 <div class="card-body">
-                   <h5 class="card-body">abc</h5>
-                   <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                   <h5 class="card-body">Sports Day on February 6,2023. 
+                </h5>
+                   <p class="card-text">A vibrant Sports Day was orchestrated for the youth of IYSA at the
+                    National Ground in Basavanagudi on February 6,  <span id="dots">...</span>
+                    <span id="more"> 2023. The event served as a platform for
+                     participants to showcase their talents, unwind, and relish the day. 
+                     Under the guidance of IYSA Director, Mr. Murugaraj, boys and girls engaged in various 
+                     events including Football, Tug of War, Cricket, Throwball, and Kabaddi. A total of 42 boys and 35 girls enthusiastically 
+                   participated, fostering a spirit of sportsmanship and camaraderie. </span></p>
+                   <button onclick="myFunction()" id="myBtn" class="btn btn-info" >Read more</button>
                 </div>
             </div> 
         </div>
 
         <div class="col-3">
             <div class="card">
-                <img src="{%  static 'home/images/csrU.jpg' %}" class="card-img-top" alt="Wild Landscape">
+                <img src="{%  static 'home/images/13edit.jpg' %}" class="card-img-top" alt="Wild Landscape">
                 <div class="card-body">
-                   <h5 class="card-body">abc</h5>
-                   <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                   <h5 class="card-body">Health Awareness   on December 10, 2022</h5>
+                   <p class="card-text"> "IYSA, Chamarajpet, collaborated with BOSCO Health Care Department 
+                    to host an awareness session  on December<span id="dots">...</span>
+                    <span id="more">  10, 2022, tackling the harmful effects of tobacco 
+                    and drug use. Director Mr. Murugaraj welcomed the attendees, while Fr. Jude Anand from 
+                    BOSCO Nilaya delivered an enlightening talk on substance abuse. Through a PowerPoint 
+                    presentation, participants gained insights into the issue, followed by a skit performed by
+                    MSW interns illustrating 
+                    strategies to overcome addiction and embrace a brighter future in sports."</span></p>
+                    <button onclick="myFunction()" class="btn btn-info" id="myBtn">Read more</button>
                 </div>
             </div> 
         </div> 
-
+        
     </div>
 </div>
+
+
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+         dots.style.display = "inline";
+         btnText.innerHTML = "Read more"; 
+         moreText.style.display = "none";
+      } else {
+         dots.style.display = "none";
+         btnText.innerHTML = "Read less"; 
+         moreText.style.display = "inline";
+      }
+    }
+</script>
+    
 

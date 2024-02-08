@@ -1,0 +1,55 @@
+<!-- home.html -->
+<!-- Add CSS in the <head> section or in an external CSS file -->
+{% include 'core/base.html' %}     
+<style>
+        #social-window {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #11ece9;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        
+        .social-icon {
+            font-size: 24px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+<!-- home.html -->
+<div id="social-window" style="display:;">
+
+    <h5>Share</h5>
+    <hr>
+    <a href="#" class="p-2 "><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.hyundai.com/in/en" class="p-2 "><i class="fab fa-twitter"></i></a>
+    <a href="#" class="p-2 "><i class="fab fa-instagram"></i></a>
+    <a href="#" class="p-2"><i class="fab fa-linkedin-in"></i></a> 
+    <!-- Add more social media icons and corresponding onclick functions as needed -->
+</div>
+
+<!-- home.html -->
+<script>
+    // Function to show/hide social window
+    function toggleSocialWindow() {
+        var socialWindow = document.getElementById("social-window");
+        if (socialWindow.style.display === "none") {
+            socialWindow.style.display = "block";
+        } else {
+            socialWindow.style.display = "none";
+        }
+    }
+    
+    // Function to share on Twitter (example)
+    function shareOnTwitter() {
+        // Implement Twitter sharing logic here
+        alert("Sharing on Twitter...");
+    }
+</script>
+   
+

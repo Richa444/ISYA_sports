@@ -4,3 +4,4 @@ from django.shortcuts import render
 
 #def homeapptest(request):
     #return render(request, 'core/.html',{'title':'this is test'})
+
