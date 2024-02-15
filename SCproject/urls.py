@@ -18,12 +18,24 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from enroll import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('core/', include('core.urls')),
     path('engagewithus/', include('engagewithus.urls')),
+    path('signup/', views.sign_up, name='signup'),
+    path('login/', views.user_login, name='login'),
+    path('profile/', views.user_profile, name='profile'),
+    path('logout/', views.user_logout, name='logout'),
+    path('changepass1/', views.user_change_pass1, name='changepass1'),
+    path('adminprofile/', views.admin_profile, name='adminprofile'),
+    
+
+
+    #path('changepass/', views.user_change_pass, name='changepass'),
     #path('home/', include('home.urls')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+

@@ -1,8 +1,15 @@
 
 {% load static %}
-
+  <style>
+    .btn {  
+            padding: 10px 20px; /* Adjust padding as needed */
+            margin-right: 20px; /* Add margin between buttons */
+        }
+    
+  </style>
   
     <p> Amount = Rs {{ amount }}</p>
+    
     <button id="rzp-button1" type="submit" class="btn btn-outline-success btn-block">Donate</button>
         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
         <script>

@@ -25,17 +25,30 @@ color:rgb(180, 10, 10)
         </div>
         <div class="col-sm-6">
             <h1 class="red trace">Who we are</h1>
-            <small class="trace "><pre>----action speaks larger----</pre></small>
-            <p class="contentjustify" >India Young Sporting Alliance is a registered Non-Profit Charitable Trust, We provide services to improve sports for youth, especially on the streets and in various underdeveloped communities, who are deprived of education and sports training due to poverty and are prone to bad habits, through sports coaches and counsellors to encourage children to focus on sports and education and the holistic development of their own lives and the lives of their families as a whole.
-                We promote the value of young people by giving them the opportunity to enjoy, stimulate and discover through sports.
-                </p>
-
-            <div class="container">
-                
-                <button type="button" class="btn btn-info">KNOW MORE</button>
-                              
-              </div>
+            <small class="trace "><pre>----action speaks larger----</pre></small><br>
+            <p class="contentjustify" >India Young Sporting Alliance is a registered Non-Profit Charitable Trust, We provide services to improve sports for youth, especially on the streets and in various underdeveloped communities, who are deprived of education and sports training due to poverty and are prone to bad habits, through sports coaches and 
+                counsellors to encourage  children to focus on sports and education and the holistic  development of their own lives and the lives of their families as a whole.
+                We promote the value of young  <span id="dots">...</span><span id="more"> people by giving them the opportunity to enjoy, stimulate and discover through sports.</span></p>
+                <button onclick="myFunction()" class="btn btn-info" id="myBtn">Read more</button>
+                          
         </div>
     </div>
 </div>
 
+<script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+    
+      if (dots.style.display === "none") {
+         dots.style.display = "inline";
+         btnText.innerHTML = "Read more"; 
+         moreText.style.display = "none";
+      } else {
+         dots.style.display = "none";
+         btnText.innerHTML = "Read less"; 
+         moreText.style.display = "inline";
+      }
+    }
+</script>

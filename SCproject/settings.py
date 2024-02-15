@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'core',
     'home',
     'engagewithus',
+    'enroll',
 ]
 
 MIDDLEWARE = [
@@ -121,3 +122,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 RAZORPAY_API_KEY='rzp_test_X3tFRdejmpsW9m'
 RAZORPAY_API_SECRET_KEY='QO6uWh3BU6sj8iYWq6FClMoU'
+
