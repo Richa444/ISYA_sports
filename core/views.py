@@ -10,6 +10,10 @@ import razorpay
 def test(request):
     return render(request, 'core/test.html',{'title':'this is test'})
 
+def about(request):
+    return render(request, 'core/about.html',{'title':'this is about'})
+
+
 def home(request):
     return render(request, 'core/home.html',{'title':'this is home page'})
 

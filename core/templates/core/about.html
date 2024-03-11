@@ -1,0 +1,53 @@
+{% load static %}
+{% include 'core/header.html' %} 
+ 
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <br><br>
+            <h1 class="red trace">About US</h1>
+            
+            <p class="contentjustify" ><div>
+                About Us:The India Young Sporting Alliance is registered as a Non Profitable Charitable Trust under the Society Registration Act of 1882 by Murugaraj.
+            For youth who are living on the streets and in various underdeveloped communities deprived of education and sports training due to poverty and prone to bad 
+            habits, we provide services to improve sports. Our mission is to encourage children to focus on sports and education so that their lives can be holistically 
+            developed, as well as those of their families. Through sports, we can encourage young people to discover, enjoy, and stimulate 
+             </div> <span id="dots">...</span><span id="more"> themselves people by giving them the opportunity to enjoy, stimulate and discover through sports.</span></p>
+            <button onclick="myFunction()" class="btn btn-info" id="myBtn">Read more</button>
+                          
+        </div>
+        <div class="col-sm-1">
+    
+        </div>
+        <div class="col-sm-4 whiteblack  ">
+            <img src="{%  static 'core/images/about.jpg' %}" class="about"
+              alt="Wild Landscape">
+        </div>
+        
+        
+    </div>
+    
+
+</div>
+
+    {% include 'core/footer.html' %}
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+             dots.style.display = "inline";
+             btnText.innerHTML = "Read more"; 
+             moreText.style.display = "none";
+          } else {
+             dots.style.display = "none";
+             btnText.innerHTML = "Read less"; 
+             moreText.style.display = "inline";
+          }
+        }
+    </script>
+
+ 
